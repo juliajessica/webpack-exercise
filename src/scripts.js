@@ -1,15 +1,14 @@
-export function pingPong(goal) {
-  var output = [];
-  for (var i = 1; i <= goal; i++) {
-    if (i % 15 === 0) {
-      output.push("ping-pong");
-    } else if (i % 3 === 0) {
-      output.push("ping");
-    } else if (i % 5 === 0) {
-      output.push("pong");
-    } else  {
-      output.push(i);
-    }
+export class Sum {
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
   }
-  return output;
+
+  calculator() {
+    let a = +this.a;
+    let b = +this.b;
+    let c = a + b;
+    return c;
+  }
+  // console.log(c);
 }
